@@ -31,3 +31,21 @@ table{
     border: 5px dashed Red;
     padding: 30px;
 }
+.P1{
+    text-align: center;
+    text-decoration: underline;
+    transform: Uppercase;
+    font-family: monospace;
+    font-size: 25px;
+
+}
+.youtube:hover{
+    color: red;
+
+}
+.canvas:visited{
+    color: grey;
+}
+.apple:active{
+    color: orange;
+}
