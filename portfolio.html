@@ -149,6 +149,21 @@
                 console.log('F grade')
             }
            </script>
+
+           <button id="changeTextBtn">change Text</button>
+           <p id="displaytext">Original Text</p>
+
+           <script>
+            const changeTextButton=document.getElementById("changeTextBtn");
+           
+            changeTextButton.addEventListener("click", changeText);
+
+            function changeText() {
+                document.getElementById("displaytext").innerHTML = "hello, Javascript world!";
+            }
+
+            
+           </script>
         </body>
     </head>
 </html>
