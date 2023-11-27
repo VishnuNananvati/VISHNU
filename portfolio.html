@@ -164,6 +164,34 @@
 
             
            </script>
+
+           <form id="myForm">
+               <label for="username">Username:</label>
+               <input type="text" id="username" name="username" required>
+               
+               <label for="password">Password:</label>
+               <input type="password" id="password" name="password" required>
+               <input type="submit" value="submit">
+            </form>
+
+           <script>
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+
+                if (username === '' || password === '') {
+                    alert('Both username and password are required.');
+                } 
+                else {
+                    setTimeout(function() {
+                        alert('Form submitted successfully after 3 seconds.');
+                    }, 3000);
+                }});
+
+                
+           </script>
         </body>
     </head>
 </html>
